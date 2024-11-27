@@ -1,0 +1,40 @@
+建立项目
+
+chat_project/
+├── server/                     # 服务器端代码
+│   ├── __init__.py
+│   ├── server.py               # WebSocket/TCP 服务器核心代码
+│   ├── message_handler.py      # 消息处理逻辑
+│   ├── user_manager.py         # 用户连接和状态管理
+│   ├── config.py               # 服务器配置
+│   └── utils.py                # 公共工具函数（如日志记录）
+├── client/                     # 客户端代码
+│   ├── __init__.py
+│   ├── client.py               # 客户端核心逻辑
+│   ├── ui.py                   # 客户端界面实现（Tkinter 或 PyQt5）
+│   ├── message_manager.py      # 消息发送和接收管理
+│   └── config.py               # 客户端配置
+├── database/                   # 数据存储模块
+│   ├── __init__.py
+│   ├── db_manager.py           # 数据库操作 POSTgreSQL
+│   └── models.py               # 数据模型定义
+├── tests/                      # 测试代码
+│   ├── __init__.py
+│   ├── test_server.py          # 测试服务器功能
+│   ├── test_client.py          # 测试客户端功能
+│   └── test_integration.py     # 测试端到端功能
+├── assets/                     # 静态资源文件
+│   ├── icons/                  # 图标文件
+│   ├── styles/                 # 界面样式文件（如 CSS/QSS）
+│   └── README.md               # 静态资源说明
+├── logs/                       # 日志文件
+│   └── chat.log                # 默认日志文件
+├── README.md                   # 项目说明文档
+├── requirements.txt            # Python 依赖列表
+├── run_server.py               # 启动服务器的脚本
+└── run_client.py               # 启动客户端的脚本
+结构v1.0.0
+
+建立虚拟环境
+使用了pip install SQLAlchemy psycopg2-binary
+使用了pip install PyQt5

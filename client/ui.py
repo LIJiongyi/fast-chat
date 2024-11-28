@@ -93,7 +93,7 @@ class Chat_Page(QWidget):
         self.chat_display.append(chat)
         self.input_chat.clear()
 
-
+# for test
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     login = Chat_Page()

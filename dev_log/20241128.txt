@@ -1,0 +1,5 @@
+配置了数据库
+使用mongodb ,相对简单,非关系型数据库,存储数据灵活
+sudo port install mongodb
+sudo port load mongodb # 开启mongodb服务
+sudo port unload mongodb # 关闭mongodb服务
